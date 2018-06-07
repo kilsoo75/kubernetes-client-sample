@@ -1,0 +1,26 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: ca-seo01-zcp-demo.pem
+    server: https://169.56.69.242:23078
+  name: zcp-demo
+contexts:
+- context:
+    cluster: zcp-demo
+    namespace: zcp-system
+    user: kilsookang@sk.com
+  name: zcp-demo
+current-context: zcp-demo
+kind: Config
+preferences: {}
+users:
+- name: kilsookang@sk.com
+  user:
+    auth-provider:
+      config:
+        client-id: bx
+        client-secret: bx
+        id-token: eyJraWQiOiIyMDE3MTAzMC0wMDowMDowMCIsImFsZyI6IlJTMjU2In0.eyJpYW1faWQiOiJJQk1pZC01MFlXOTlERlFHIiwiaXNzIjoiaHR0cHM6Ly9pYW0ubmcuYmx1ZW1peC5uZXQva3ViZXJuZXRlcyIsInN1YiI6ImtpbHNvb2thbmdAc2suY29tIiwiYXVkIjoiYngiLCJleHAiOjE1MjgyOTgyNTMsInNjb3BlIjoiaWJtIG9wZW5pZCIsImlhdCI6MTUyODI5NDY1M30.C9SMafCcX_fjssH_qJ5DKYK8KOOewJYD_YyOynPz0Qb6aPwnTTGXo3FnKKwxEwAAzfd0k82DJjIRgI6CAeVewyeBAys6BdKesTSYwM-lb9Tl5ICEPRFlyG7dDF1wP2G6K2DCxzF1O8bOybM4MbhN1ydgUik30oxbjUuZSmLFQbW6uOkXotSfl52S2xGmmKwoiUWqy2NjuIuAJ7_Z2p6hAb8JaGt0P3yc6ky0BGtk0GaaLicqshh45Tlaze1iFyOrqlz5Csa2qy5Xf6d04K6ZYVh1Pu7J5miE5EL_wRSWDsk0cE8_q362w6nR2HolR2p3lLalwuvKckOngfITuE6NYA
+        idp-issuer-url: https://iam.ng.bluemix.net/kubernetes
+        refresh-token: J1ACcO08NTTMbtVmHis8RUvikiPoNWzolMsZS2PTZtrNAVZdy--OVAnraijLbmSMwarimFNTb0S36pjB51B5P3WTUWUdPNP8FNJCvcajqlIus_-Ysa4Zm-YNFWuBXCc2ETOIERZN3kYFYvaPjCRzLMWD_hQdvhScNEey5RYOQyZEJnVluMs_z9o-nMeG5GM0Dx7iynzAMwb8zawgyzMhniytOQEFRkcs_YThwA3j4ThxJOWQkU0X3-T__owhvdCgYItlUMn0UKXwxjDHXUKC_pAwTLp0TM9_B701edvEEZhPrmCQgJGFuZEK0uPhCjXnNLYM8-gyAagbuyGpZv73Dfv_Pbx3yC9jMshEY140rPOyF_gBA_OS7ROZ3mQi0t18iRUcNIddp0ZuiaHN7SYUb_GbungAh03YDxfXwJxBDsqQj4pjXKj7lupOQPg19niT7k7BpzGvSmTSXF8AONdiANWTqpTMwk-JI1TuxRbn9icE2cvw556BHdROTy9kusmNYKD87nZq-GOm0IGJPKFKwWuBJQHMsb6OXi596e7YKZfYyeJfVdOOYP8eQldcN2lKEr9XOwpE63jN7tx70-eEr9HimgT9eW6qHUdu2OBzdm_ZMIEz47J_oZfv6GxWhcv4h4tas1F6kVc3c6yjc7cCSbRlZ84ewqTuBIyP-W4TxH9HOQ2rLl8ZS0oowrEcCL4Q5QOzPL4VBD99AIi1XQqYtP3fwYyAG5JK_SaFX0sfOK-M34zkkVVfLnBo0KcyNvmDs18VSQEUmdAONtqcCRYWrIdTssRKzwaB1Ywo3BoRRzkhkLB7m_c1H0Cgm0UFMuBSmVkAjjDECOKvZWwllyHv3Xai
+      name: oidc

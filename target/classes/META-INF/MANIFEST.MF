@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: zcp-iam-k8s
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: kilsookang
+Implementation-Vendor-Id: com.skcc.cloudzcp
+Build-Jdk: 1.8.0_144
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/zcp-iam-k8s
+Created-By: Maven Integration for Eclipse
+
